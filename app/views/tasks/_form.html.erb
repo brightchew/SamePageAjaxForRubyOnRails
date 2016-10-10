@@ -1,0 +1,8 @@
+<%= simple_form_for @task, remote: true do |f|   %>
+  <%= f.input  :description, as: :text           %>
+
+  <div class='input-group date' id='datetimepicker1'>
+  	<%= f.input  :deadline %>
+  </div>
+  <%= f.button :submit %>
+<% end %>
